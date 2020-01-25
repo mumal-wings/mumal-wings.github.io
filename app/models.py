@@ -14,7 +14,6 @@ class User(UserMixin, db.Model):
     last_seen = db.Column(db.DateTime, default=datetime.utcnow())
     posts = db.relationship('Post', backref='author', lazy='dynamic')
 
-
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
 
