@@ -2,3 +2,6 @@ app.db
 venv/
 .idea/
 __pycache__
+app/__pycache__
+*.pyo
+*.pyc
